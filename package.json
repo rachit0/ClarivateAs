@@ -1,10 +1,11 @@
 {
   "name": "shared-orm",
   "version": "1.0.0",
-  "main": "src/database/database-connection.js",
+  "main": "dist/database/database-connection.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node src/database/database-connection.js",
+    "build": "tsc",
+    "start": "ts-node src/database/database-connection.ts",
     "migrate": "sequelize-cli db:migrate"
   },
   "keywords": [],
@@ -13,9 +14,14 @@
   "description": "",
   "dependencies": {
     "mysql2": "^3.12.0",
-    "sequelize": "^6.37.5"
+    "sequelize": "^6.37.5",
+    "sequelize-typescript": "^2.1.5"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.6.2"
+    "@types/node": "^22.13.8",
+    "@types/sequelize": "^4.28.20",
+    "sequelize-cli": "^6.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
