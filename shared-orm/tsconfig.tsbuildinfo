@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/database/database-connection.ts","./src/models/category.ts","./src/models/product.ts"],"version":"5.8.2"}
